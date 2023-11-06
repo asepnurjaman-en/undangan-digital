@@ -1,0 +1,125 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+.navbar {
+    .navbar-brand {
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .creasik-nav {
+        background-color: $light;
+        padding: .45em;
+        .nav-link {
+            display: block;
+            font-family: "Lateef", cursive;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            padding: .25em 1.5em;
+            transition: $smooth;
+            &:hover {
+                background-color: $cherryblossom;
+                color: $white;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin: 1em 0 0 0;
+            text-align: center;
+        }
+    }
+    .creasik-login-nav {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+        background-color: $cherryblossom;
+        font-family: $font-family-sans-serif;
+        font-size: 1.2em;
+        transition: $smooth;
+        &:hover {
+            background-color: $ultrared;
+        }
+        i {
+            font-size: .85em;
+        }
+        @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: center;
+        }
+    }
+    .creasik-login-nav.authed {
+        color: $ultrared;
+        border: 2px solid $cherryblossom;
+        background-color: $white;
+    }
+}
+
+.home {
+    &__intro {
+        background-color: $lightpink;
+        h1 {
+            color: $ultrared;
+            font-size: 5em;
+            font-weight: 1000;
+            @include media-breakpoint-down(sm) {
+                font-size: 4em;
+            }
+        }
+        h3 {
+            color: $dark;
+            font-size: 2.75em;
+            @include media-breakpoint-down(sm) {
+                font-size: 2em;
+            }
+        }
+        &--button {
+            margin: 3em 0 1em 0;
+            @include media-breakpoint-down(sm) {
+                margin: 1em 0;
+            }
+            a {
+                font-family: "Lateef", cursive;
+                font-size: 2em;
+                margin: 0 .25em 0 0;
+                text-transform: capitalize;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .creasik-button-primary {
+                color: $white;
+                background-color: $cherryblossom;
+                transition: $smooth;
+                &:hover {
+                    background-color: $ultrared;
+                }
+                i {
+                    font-size: .65em;
+                }
+                @include media-breakpoint-down(sm) {
+                    display: block;
+                    margin: 1em 0 0 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__prologue {
+        background-color: $sakura;
+        &--text {
+            color: $white;
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+            h6 {
+                font-size: 1.8em;
+                font-weight: 700;
+            }
+        }
+    }
+}

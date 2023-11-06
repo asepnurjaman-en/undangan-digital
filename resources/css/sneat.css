@@ -1,0 +1,10 @@
+@import url('~bootstrap/dist/css/bootstrap');
+@import url('~boxicons/css/boxicons');
+@import url('~perfect-scrollbar/css/perfect-scrollbar');
+@import url('~sweetalert2/dist/sweetalert2');
+
+@import url('./sneat/core.css');
+@import url('./sneat/theme-default.css');
+@import url('./sneat/page-auth.css');
+@import url('./sneat/re-style.css');
+
